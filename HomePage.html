@@ -16,91 +16,99 @@
             font-family: 'Serif Gothic Black', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f3e6d0; /* Light beige background matching the theme */
+            background-color: #f3e6d0; /* Light beige background */
             color: #444;
             line-height: 1.6;
         }
 
-        /* Header without text, full image */
         header {
-            background-image: url('The Shedding_Title_Pink.png'); /* Use the uploaded image as header background */
+            background-image: url('The Shedding_Title_Pink.png');
             background-size: cover;
             background-position: center;
-            height: 400px; /* Adjust height to suit design */
-            box-shadow: 0 2px 10px #000;
+            height: 400px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
 
-        /* Navigation Bar */
         nav {
             background-color: #6a417d; /* Purple background */
             padding: 0.75rem;
         }
-        nav ul {
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-container ul {
             list-style: none;
             padding: 0;
             margin: 0;
-            text-align: center;
+            display: flex;
+            gap: 1.5rem;
         }
-        nav ul li {
+
+        .nav-container li {
             display: inline;
-            margin: 0 1.5rem;
         }
-        nav ul li a {
+
+        .nav-container a {
             color: #ff4e75; /* Bright pink for the links */
             text-decoration: none;
             font-size: 1.1rem;
             font-weight: bold;
         }
-        nav ul li a:hover {
+
+        .nav-container a:hover {
             color: #38214d; /* Dark purple on hover */
         }
 
-        /* Main Content Container */
         .container {
             padding: 3rem 2rem;
             background-color: #f7ece1; /* Slightly darker beige */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 2rem 0;
+            margin: 2rem auto;
             max-width: 1100px;
-            margin-left: auto;
-            margin-right: auto;
         }
 
-        /* Headings */
         h2, h3, h4 {
             color: #ff4e75; /* Bright pink for headings */
             margin-top: 1.5rem;
         }
+
         h2 {
             font-size: 2.5rem;
         }
+
         h3 {
             font-size: 2rem;
         }
+
         h4 {
             font-size: 1.5rem;
         }
 
-        /* Text */
         p, ul, li {
             font-size: 1.2rem;
             color: #38214d; /* Dark purple for body text */
         }
 
-        /* Gallery Images */
         .gallery img {
             max-width: 100%;
             height: auto;
             border: 5px solid #38214d; /* Dark purple border */
             margin: 1rem 0;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.2s;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* Footer */
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
         footer {
             background-color: #38214d; /* Dark purple background */
             color: #ff4e75; /* Bright pink text */
@@ -108,12 +116,77 @@
             text-align: center;
             font-size: 0.9rem;
         }
+
         footer a {
             color: #ff4e75; /* Bright pink links */
             text-decoration: none;
         }
+
         footer a:hover {
             text-decoration: underline;
+        }
+
+        .button {
+            background-color: #ff4e75; /* Bright pink background */
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #38214d; /* Dark purple */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input[type="email"] {
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        form button {
+            background-color: #ff4e75; /* Bright pink background */
+            color: #fff;
+            border: none;
+            padding: 0.75rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #38214d; /* Dark purple */
+        }
+
+        @media (max-width: 768px) {
+            .nav-container ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-container ul li {
+                margin: 0.5rem 0;
+            }
         }
     </style>
 </head>
@@ -124,21 +197,23 @@
 </header>
 
 <nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#cast">Cast & Crew</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#screenings">Screenings & Press</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#newsletter">Newsletter</a></li>
-    </ul>
+    <div class="nav-container">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#cast">Cast & Crew</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#screenings">Screenings & Press</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+    </div>
 </nav>
 
 <div class="container" id="home">
     <h2>Welcome to The Shedding!</h2>
     <p>Step inside... if you dare! Unveil the terror and hilarity that awaits you. From spine-chilling trailers to insider scoop on our mischievous cast, there's no escape from the fun!</p>
-    <p><a href="#" style="color:#ff4e75; text-decoration:underline;">Watch the Trailer... if you can handle it!</a></p>
+    <p><a href="#" class="button">Watch the Trailer... if you can handle it!</a></p>
     <h3>Latest News:</h3>
     <ul>
         <li><strong>Release Date Announced!</strong> The blood-curdling laughter begins soon...</li>
@@ -181,7 +256,7 @@
     <p>[Festival Name] - [Screening Date and Time]</p>
     <h3>Press Coverage:</h3>
     <p>[Publication Name]: “A fresh twist on horror-comedy...”</p>
-    <p><a href="#">Press Kit Download</a></p>
+    <p><a href="#" class="button">Press Kit Download</a></p>
 </div>
 
 <div class="container" id="contact">
@@ -198,7 +273,7 @@
     <form action="#">
         <label for="email">Email Address:</label>
         <input type="email" id="email" name="email" required>
-        <button type="submit">Subscribe</button>
+        <button type="submit" class="button">Subscribe</button>
     </form>
 </div>
 
