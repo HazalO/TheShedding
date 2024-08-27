@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shedding - Official Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            padding: 2rem;
+        }
+        h1, h2, h3 {
+            color: #000;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The Shedding</h1>
+    <p>Official Website</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#cast">Cast & Crew</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#screenings">Screenings & Press</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+    </ul>
+</nav>
+
+<div class="container" id="home">
+    <h2>Welcome to The Shedding!</h2>
+    <p>Explore our site to discover everything about the film, including trailers, cast information, and upcoming screenings.</p>
+    <p><a href="#">Watch the Trailer</a></p>
+    <h3>Latest News:</h3>
+    <ul>
+        <li>Release Date Announced!</li>
+        <li>Festival Screenings</li>
+        <li>Behind-the-Scenes Sneak Peek</li>
+    </ul>
+</div>
+
+<div class="container" id="about">
+    <h2>About</h2>
+    <h3>The Shedding</h3>
+    <p>When a bizarre curse is unleashed in their small town, a group of friends must band together to stop the chaos...</p>
+    <h4>Director’s Note</h4>
+    <p>[Director's Name] shares their vision for The Shedding...</p>
+</div>
+
+<div class="container" id="cast">
+    <h2>Cast & Crew</h2>
+    <p><strong>[Lead Actor’s Name]</strong> as [Character Name]</p>
+    <p><strong>[Lead Actress’s Name]</strong> as [Character Name]</p>
+    <p><strong>[Supporting Actor’s Name]</strong> as [Character Name]</p>
+    <p>Director: [Director's Name]</p>
+    <p>Writer: [Writer's Name]</p>
+    <p>Producer: [Producer's Name]</p>
+</div>
+
+<div class="container" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="#" alt="Production Still 1">
+        <img src="#" alt="Production Still 2">
+        <img src="#" alt="Behind-the-Scenes">
+    </div>
+</div>
+
+<div class="container" id="screenings">
+    <h2>Screenings & Press</h2>
+    <h3>Find Us at These Festivals:</h3>
+    <p>[Festival Name] - [Screening Date and Time]</p>
+    <p>[Festival Name] - [Screening Date and Time]</p>
+    <h3>Press Coverage:</h3>
+    <p>[Publication Name]: “A fresh twist on horror-comedy...”</p>
+    <p><a href="#">Press Kit Download</a></p>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>For media inquiries, booking information, or general questions, please contact us at:</p>
+    <p>Email: [email@example.com]</p>
+    <p>Phone: [Phone Number]</p>
+    <p>Social Media: [Links to Social Media Profiles]</p>
+</div>
+
+<div class="container" id="newsletter">
+    <h2>Newsletter Signup</h2>
+    <p>Sign up for our newsletter to receive the latest updates, exclusive content, and news about The Shedding.</p>
+    <form action="#">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; [Year] The Shedding. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>
